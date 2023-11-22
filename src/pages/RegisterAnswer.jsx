@@ -30,7 +30,6 @@ export default function RegisterAnswer() {
             setSuccesMessage(data)
             setIsSuccessMessageVisible(true)
             setIsLoading(false)
-            console.log(tag)
         }
     }
     catch(e){
