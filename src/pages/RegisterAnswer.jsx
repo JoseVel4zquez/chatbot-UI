@@ -24,7 +24,7 @@ export default function RegisterAnswer() {
             patrones: patterns,
             respuestas: answers
         });
-        const {data , status, response} = sendData;
+        const {data , status} = sendData;
         
         if(status === 201){
             setSuccesMessage(data)
@@ -32,15 +32,12 @@ export default function RegisterAnswer() {
             setIsLoading(false)
             console.log(tag)
         }
-         else{
-            setErrorMessage(data.response.data)
-            setIsErrorMessageVisible(true)
-            setIsLoading(false)
-        }
-        console.log(data.response)
     }
     catch(e){
-        console.log(e);
+        setErrorMessage(e.response.data)
+        setIsErrorMessageVisible(true)
+        setIsLoading(false)
+        
     }
   }
   return (
