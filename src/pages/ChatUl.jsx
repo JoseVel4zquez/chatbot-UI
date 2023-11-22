@@ -3,7 +3,7 @@ import '../App.css'
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 import '../chat.css'
-import { Bars } from  'react-loader-spinner'
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 

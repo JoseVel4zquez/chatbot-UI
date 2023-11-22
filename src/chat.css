@@ -164,3 +164,7 @@ input:focus {
 	position: absolute;
 	transform: rotate(12deg);
 }
+.align-center{
+	align-items: center;
+	justify-content: center
+}
