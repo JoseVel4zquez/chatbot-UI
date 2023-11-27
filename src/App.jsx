@@ -10,7 +10,7 @@ const router = createBrowserRouter([
 		element: <ChatUi />,
 	},
 	{
-		path: "/test",
+		path: "/register",
 		element: <RegisterAnswer />,
 	},
 ])
