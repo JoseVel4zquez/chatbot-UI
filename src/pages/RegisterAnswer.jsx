@@ -1,7 +1,6 @@
 import {useState} from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { TailSpin } from  'react-loader-spinner'
-import { faTrash, faPenSquare } from '@fortawesome/free-solid-svg-icons'
+import DataTable from '../components/DataTable'
 import axios from 'axios'
 import  '../chat.css'
 
@@ -48,26 +47,7 @@ export default function RegisterAnswer() {
             </div>
         </div>
         <div className="container flex flex-col md:flex-row justify-around itme mt-10">
-            <div>
-                <table className="rounded-lg w-full">
-                    <thead>
-                        <th className="pt-5 px-7 border border-black; pb-5">tags</th>
-                        <th className="pt-5 px-7 border border-black; pb-5">Patrones</th>
-                        <th className="pt-5 px-7 border border-black; pb-5">Respuestas</th>
-                        <th className="pt-5 px-7 border border-black; pb-5">Actions</th>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td className="pt-5 px-7 font-bold text-lg bg-slate-400 pb-5">Eventos</td>
-                            <td className="pt-5 px-7 font-bold text-lg bg-slate-400 pb-5">Test, elementos, vacaciones</td>
-                            <td className="pt-5 px-7 font-bold text-lg bg-slate-400 pb-5">hola, como te va?, test 1</td>
-                            <td className="pt-5 px-7 font-bold text-lg bg-slate-400 pb-5 flex items-center justify-around"> 
-                            <button className='bg-red-500 hover:bg-red-400 rounded-md py-2 px-3 text-white transition-all mr-4' ><FontAwesomeIcon icon={faTrash} /> </button> <button className='bg-orange-400 hover:bg-orange-300 transition-all rounded-md py-2 px-3 text-white'><FontAwesomeIcon icon={faPenSquare} /></button></td>
-                        </tr>
-                        
-                    </tbody>
-                </table>
-            </div>
+            <DataTable />
             <div className="flex flex-col items-center justify-center">
                 <div className="w-full max-w-md bg-gray-800 rounded-lg shadow-md p-6">
                     <h2 className="text-2xl font-bold text-gray-200 mb-4">Registra una nueva respuesta</h2>
