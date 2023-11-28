@@ -13,7 +13,7 @@ export default function RegisterAnswer() {
                 <p className="text-white font-Montserrat text-lg leading-6 max-w-md pt-5">Esta seccion es para consultar las preguntas y respuestas creadas dentro del modelo, y tambien podemos crear nuevas preguntas y respuestas para el chatbot</p>
             </div>
         </div>
-        <div className="container flex flex-col md:flex-row justify-around itme mt-10">
+        <div className="flex flex-col md:flex-row justify-around itme mt-10">
             <DataTable />
             <Railad />
         </div>
