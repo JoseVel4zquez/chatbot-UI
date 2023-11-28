@@ -1,6 +1,6 @@
 
 import DataTable from '../components/DataTable'
-import Railad from '../components/Railad'
+
 import '../styles/registerAnswers.css'
 
 export default function RegisterAnswer() {
@@ -15,7 +15,7 @@ export default function RegisterAnswer() {
         </div>
         <div className="flex flex-col md:flex-row justify-around itme mt-10">
             <DataTable />
-            <Railad />
+            
         </div>
     </div>
   )

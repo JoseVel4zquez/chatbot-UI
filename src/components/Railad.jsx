@@ -4,7 +4,9 @@ import { faChevronUp } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import axios from 'axios'
 
-export default function Railad() {
+export default function Railad(props) {
+
+    const {isChange, setIsChange}= props
 
     const [succesMessage, setSuccesMessage] = useState("")
     const [errorMessage, setErrorMessage] = useState("")
@@ -35,6 +37,7 @@ export default function Railad() {
             setSuccesMessage(data)
             setIsSuccessMessageVisible(true)
             setIsLoading(false)
+            setIsChange(!isChange)
             
         }
     }
