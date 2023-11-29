@@ -71,18 +71,18 @@ function ChatUi() {
 	const uniqueTitles = Array.from(new Set(previewsChats.map(previewsChat => previewsChat.title)))
 
 	return (
-		<div className='flex bg-app-gray'>
+		<div className='flex bg-white'>
 			<SideBar uniqueTitles={uniqueTitles} handleClick={handleClick} createNewChat={createNewChat}/>
 			
 			
 			<section className='main h-screen w-full flex flex-col justify-between items-center text-center'>
-				<h1 className='text-feed-white font-bold text-2xl py-5'>{currentTitle ? currentTitle : 'chatbot'}</h1>
+				<h1 className='text-forms-dark font-bold text-2xl py-5'>{currentTitle ? currentTitle : 'chatbot'}</h1>
 				<ul className='feed flex flex-col overflow-x-hidden overflow-y-scroll w-full p-0'>
 					{currentChat?.map((chatMessage, index) => (
 						
-						<li id={chatMessage.role} className='flex w-full bg-feed-gray p-5 my-5 mx-0' key={index}>
-							<p  className='role min-w-[100px] text-feed-white pl-5'>{chatMessage.role}</p>							
-							<p  className='role min-w-[100px] text-feed-white'>{chatMessage.content}</p>	
+						<li id={chatMessage.role} className='flex py-5 border-institucional-purple  my-5 mx-0' key={index}>
+							<p  className='role min-w-[100px] pl-5'>{chatMessage.role}</p>							
+							<p  className='role min-w-[100px '>{chatMessage.content}</p>	
 						</li>
 						
 						))}
